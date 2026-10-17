@@ -1,0 +1,80 @@
+.page-landing {
+    background: var(--color-bg);
+}
+
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem 3rem;
+    text-align: center;
+    background: #0a0a0a !important;
+    background:
+        radial-gradient(circle at 50% 20%, rgba(201, 169, 98, 0.12), transparent 42%),
+        radial-gradient(circle at 50% 80%, rgba(201, 169, 98, 0.06), transparent 35%),
+        #0a0a0a !important;
+}
+
+.landing-logo-image {
+    width: 168px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    filter: drop-shadow(0 8px 24px rgba(201, 169, 98, 0.22));
+}
+
+.landing-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 2rem;
+}
+
+.landing-cta {
+    width: min(320px, 100%);
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.85rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.landing-install {
+    display: inline-flex;
+    width: min(320px, 100%);
+    margin-bottom: 0.75rem;
+    border-color: var(--color-gold);
+    color: var(--color-gold-light);
+}
+
+.landing-install-hint {
+    display: block;
+    width: min(320px, 100%);
+    margin: 0 0 1.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.landing-admin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.landing-admin:hover {
+    color: var(--color-gold-light);
+}
+
+@media (min-width: 768px) {
+    .landing-logo-image {
+        width: 192px;
+    }
+}

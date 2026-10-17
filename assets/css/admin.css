@@ -1,0 +1,225 @@
+.page-admin {
+    background: var(--color-bg);
+}
+
+.admin-header {
+    background: var(--color-black);
+    color: var(--color-text);
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-border-strong);
+}
+
+.admin-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.admin-header h1 {
+    font-family: var(--font-display);
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--color-gold-light);
+}
+
+.admin-header p {
+    margin: 0.25rem 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.admin-header-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.admin-header .btn-secondary {
+    color: var(--color-gold-light);
+    border-color: var(--color-border-strong);
+}
+
+.admin-main {
+    padding: 2rem 0 3rem;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(201, 169, 98, 0.1), transparent 45%),
+        var(--color-bg);
+}
+
+.login-card {
+    width: min(420px, 100%);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.login-card h1 {
+    font-family: var(--font-display);
+    margin: 0 0 0.5rem;
+    color: var(--color-gold-light);
+}
+
+.login-card > p {
+    margin: 0 0 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.login-form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 0.95rem 1.1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.3em;
+    text-align: center;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    background: var(--color-surface-elevated);
+    color: var(--color-text);
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.login-form .form-group input:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(201, 169, 98, 0.15);
+}
+
+.login-form-actions {
+    margin-top: 1.75rem;
+    text-align: center;
+}
+
+.login-submit {
+    padding: 0.78rem 1.85rem;
+    font-size: 0.95rem;
+    min-width: 148px;
+}
+
+.filters-bar {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.filters-row {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.filters-row label {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.filters-row select,
+.filters-row input {
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font: inherit;
+    min-width: 160px;
+    background: var(--color-surface-elevated);
+    color: var(--color-text);
+}
+
+.bookings-table-wrap {
+    overflow-x: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 860px;
+}
+
+.bookings-table th,
+.bookings-table td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: middle;
+}
+
+.bookings-table th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-gold);
+    background: var(--color-surface-elevated);
+}
+
+.bookings-table tr:last-child td {
+    border-bottom: none;
+}
+
+.bookings-table a {
+    color: var(--color-gold-light);
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-small {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+.btn-success {
+    background: var(--color-success);
+    color: #0a0a0a;
+}
+
+.btn-danger {
+    background: var(--color-danger);
+    color: #fff;
+}
+
+.empty-state {
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+    .filters-bar {
+        grid-template-columns: 1fr auto;
+        align-items: end;
+    }
+}
+
+@media (max-width: 640px) {
+    .bookings-table {
+        min-width: 720px;
+    }
+}

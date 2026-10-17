@@ -1,0 +1,14 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Kopiraj ovaj fajl kao database.local.php i unesi podatke iz InfinityFree panela.
+ * MySQL Details: https://app.infinityfree.net/
+ */
+
+define('DB_HOST', 'sqlXXX.infinityfree.com');
+define('DB_NAME', 'if0_XXXXXXX_salon');
+define('DB_USER', 'if0_XXXXXXX');
+define('DB_PASS', 'TVOJA_LOZINKA');
+define('DB_CHARSET', 'utf8mb4');
